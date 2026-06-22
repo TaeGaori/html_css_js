@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>483p 연습문제</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 450px;
+            padding: 10px;
+            border: 1px solid #222;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: #d7f4ff;
+            animation: changeColor 3s infinite, translate 3s infinite alternate;
+        }
+        @keyframes changeColor{
+            0%{
+                background-color: violet;
+            }
+            50%{
+                background-color: blueviolet;
+            }
+            100%{
+                background-color: palevioletred;
+            }
+        }
+        @keyframes translate{
+            from{
+                transform: translateX(0);
+            }
+            from{
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
